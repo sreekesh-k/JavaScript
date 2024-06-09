@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <style>
+        body{
+            margin:0;
+            font-family: sans-serif;
+        }
+        #stp-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        #content{
+            border: 3px solid black;
+            padding: 30px;
+            border-radius: 25px;
+        }
+        #timer{
+            font-size: 3em;
+   
+        }
+        #btn{
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        #btn button{
+            color: white;
+            font-size: 1.2em;
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 15px;
+        }
+    </style>        
+</head>
+<body>
+
+    <div id="stp-container">
+        <h1>StopWatch</h1>
+        <div id="content">
+            <div id="timer">
+                00:00:00:00
+            </div>
+            <div id="btn">
+                <button onclick="start()" style="background-color: green;">Start</button>
+                <button onclick="stop()"  style="background-color: red;">Stop</button>
+                <button onclick="reset()"  style="background-color: blue;">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="stopWatch.js"></script>
+
+</body>
+</html>
