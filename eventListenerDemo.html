@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventListener</title>
+    <style>
+        #container{
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #box{
+            z-index: 10;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 30px;
+            font-size: 2em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #move{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            display: none;
+            top: 50;
+            left: 50;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="move"></div>
+        <div id="box">Click Here</div>
+    </div>
+    <script src="eventListenerDemo.js"></script>
+</body>
+</html>
