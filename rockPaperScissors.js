@@ -14,7 +14,7 @@ function startPlay(playerChoice){
     sts.classList.remove("red","green")
     const computerChoice = computerChoices[Math.floor(Math.random() * 3)]
     pc.textContent = `PlayerChoice: ${playerChoice}`
-    cc.textContent = `PlayerChoice: ${computerChoice}`
+    cc.textContent = `ComputerChoice: ${computerChoice}`
     if(playerChoice == computerChoice){
         sts.textContent = "IT'S A TIE"           
     }else{
