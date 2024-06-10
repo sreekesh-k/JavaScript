@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissor</title>
+    <style>
+        #main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .container{
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 30px;
+        }
+        .choice{
+            background-color: rgba(76, 199, 240, 0.931);
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            font-size: 3.5em;
+            margin: 0px 10px;
+        }
+        .choice:hover{
+            font-size: 3.7em;
+            background-color: rgba(76, 199, 240, 0.579);
+        }
+        .scoreboard{
+            display: flex;
+            min-width: 375px;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .scores{
+            margin: 0px 10px;
+            padding: 30px;
+           
+        }
+        #details{
+            min-width: 375px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .status{
+            border-radius: 15px;
+            background-color: rgba(128, 128, 128, 0.716);
+            width: 100%;
+            text-align: center;
+            font-size: 3em;
+            color: white;
+        }
+        #playerScore{
+            color: green;
+        }
+        #computerScore{
+            color: red;
+        }
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: rgba(0, 128, 0, 0.735);
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div><h1>RockPaperScissor</h1></div>
+        <div class="container">
+            <button class="choice" onclick="startPlay('rock')">🤜</button>
+            <button class="choice" onclick="startPlay('paper')">🖐️</button>
+            <button class="choice" onclick="startPlay('scissor')">✌</button>
+        </div>
+        <div class="scoreboard">
+            <div class="scores">
+                <div id="playerChoice"></div>
+                <div id="playerScore"></div>            
+            </div>
+            <div class="scores">
+                <div id="computerChoice"></div>
+                <div id="computerScore"></div>            
+            </div>
+        </div>
+        <div id="details">
+            <div class="status" id="sts"></div>
+        </div>
+        
+    </div>
+    <script src="rockPaperScissors.js"></script>
+</body>
+</html>
