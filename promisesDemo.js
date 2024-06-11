@@ -1,6 +1,6 @@
 // promise are objects that asynchronous operations
 // wrap async codes with promise object to avoid call back hells
-// new Promise((resolve,reject)=>{async code})
+// new Promise((resolve,reject)=>{async code}) promise to RETURN a value
 
 const wokeUp = true
 const wentToCollege = true
