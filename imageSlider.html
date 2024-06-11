@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageSlider</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 30px;
+        }
+        #main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        #container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-height: 600px;
+            max-width: 100vw;
+            padding: 10px;
+        }
+        .imageslider{
+            margin: 0px 20px;
+            max-height: 500px;
+            max-width: 400px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+        }
+        .imagecontainer{
+            height: 300px;
+            width: 350px;
+            border: 1px solid black;
+            border-radius: 25px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #container button{
+            color: white;
+            background-color: rgba(81, 137, 227, 0.586);
+            border: none;
+            border-radius: 50%;
+            font-size: 3em;
+        }
+        .imagecontainer img{
+            max-height: 300px;
+            max-width: 350px;
+        }
+        .slide{
+            display: none;
+        }
+        .display{
+            display: block;
+            animation: fade 1s;
+        }
+        @keyframes fade{
+            from {opacity: .1;height: 100px;}
+            to{opacity: 1; height: 350px;}
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="container">
+            <button onclick="prev()">&#10094;</button>
+            <div class="imageslider">
+                <h1>Image Slider</h1>
+                <div class="imagecontainer">
+                    <img src="https://developer.android.com/static/images/cluster-illustrations/controllers.svg" alt="image1" class="slide">
+                    <img src="https://st4.depositphotos.com/20523700/25949/i/450/depositphotos_259494912-stock-photo-illustration-video-game-icon.jpg" alt="image2" class="slide">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Video-Game-Controller-Icon-IDV-green.svg/2048px-Video-Game-Controller-Icon-IDV-green.svg.png?945ebzlhksaxifru1q7" alt="image3" class="slide">
+                </div>
+                <h2></h2>
+            </div>
+            <button onclick="next()">&#10095;</button>
+        </div>
+    </div>
+    <script src="imageSlider.js"></script>
+</body>
+</html>
